@@ -5,11 +5,11 @@ import {toast} from 'react-hot-toast';
 import { signIn } from "next-auth/react";
 import Input from "../Input";
 import Modal from "../Modal";
-import useRegistrationModal from "@/hooks/useRegistration";
+import useRegisterModal from "@/hooks/useRegistration";
 
 const RegisterModals = () => {
     const loginModal = useLoginModal();
-    const registerModal = useRegistrationModal();
+    const registerModal = useRegisterModal();
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [name, setName] = useState('')
