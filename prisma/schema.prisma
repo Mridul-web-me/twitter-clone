@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = "mongodb+srv://twitterDatabase:hK34MozTHlOFkJui@cluster0.kki34.mongodb.net/twitterDatabase"
+  url      = env("DATABASE_URL")
 }
 
 
